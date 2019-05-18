@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teabagging</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script   src="https://code.jquery.com/jquery-3.4.0.js"   integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="   crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<header>
+<h1>Teabagging v1.0</h1>
+</header>
+<div class="teatable-wrapper">
+    <table id="teatable">
+        <tbody>
+            <tr class="teatable-row">
+                <td class="teatable-cell">
+                    <label>
+                        <select id="tea-name-0" class="tea-name">
+                            <option selected disabled>Название чая</option>
+                            <option value="Букет Грузии">Букет Грузии</option>
+                            <option value="Принцесса Нури">Принцесса Нури</option>
+                            <option value="Каждый День">Каждый День</option>
+                            <option value="Круглый Год">Круглый Год</option>
+                        </select>
+                    </label>
+                </td>
+                <td class="teatable-cell">
+                    <label>
+                        <input id="amount-0" class="amount" placeholder="Количество в граммах">
+                    </label>
+                </td>
+                <td class="teatable-cell">
+                    <span id="tea-result-0">0</span>
+                    <span> р.</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="result-wrapper">
+    <button id="create-row-button">
+        Добавить сорт
+    </button>
+</div>
+<div class="result-wrapper">
+    <span>Итого:&nbsp;</span>
+    <span id="result">0</span>
+    <span>&nbsp;р.</span>
+</div>
+</body>
+</html>

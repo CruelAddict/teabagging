@@ -1,0 +1,23 @@
+.teatable-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#teatable{
+    width: 100%;
+    max-width: 600px;
+}
+.result-wrapper{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.red{
+    color: red;
+}
