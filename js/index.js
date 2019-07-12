@@ -93,7 +93,7 @@ function addIngredient(rowNumber) {
         .append($('<label>')
             .addClass('tea-table-item ')
             .append($('<input>')
-                .attr('placeholder', 'Количество в граммах')
+                .attr('placeholder', 'Количество')
                 .addClass('amount')
             )
         )
@@ -123,7 +123,7 @@ function recalculateRow(rowNumber) {
 
 function fillIngredients() {
     for (var ingredient in waste) {
-        $('#waste-'+ingredient).text(waste[ingredient]);
+        isNaN(waste[ingredient]) ? $('#waste-'+ingredient).text("ERROR").addClass('red') : $('#waste-'+ingredient).text(waste[ingredient]).removeClass('red');
     }
 }
 
@@ -180,7 +180,7 @@ function main() {
                             .append($('<label>')
                                 .addClass('tea-table-item')
                                 .append($('<input>')
-                                    .attr('placeholder', 'Количество в граммах')
+                                    .attr('placeholder', 'Количество')
                                     .addClass('amount')
                                 )
                             )

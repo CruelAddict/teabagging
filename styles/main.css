@@ -73,7 +73,9 @@ header{
     width: 100%;
 }
 
-
+.amount {
+    width: 96%;
+}
 
 .count-cell {
     max-width: 20px;
